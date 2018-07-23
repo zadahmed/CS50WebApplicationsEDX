@@ -2,9 +2,152 @@
 <html>
 <head>
 	<title>Helllo</title>
-</head>
+	<meta name="viewport" content="width=device-width",initial-scale=1.0>
+	<style>
+		h1,h2 {
+			color: red;
+			font-weight: bold;
+
+		}
+		input[type=text]{
+			background-color: gray;
+		}
+
+		button{
+			width: 200px;
+			height: 50px
+			font-weight:bolder;
+		}
+
+		button:hover{
+			background-color: orange
+		}
+
+		a::before{
+			content: "\21d2 Click Here:";
+			font-weight: bold;
+
+		}
+
+		@media print{
+			.screen-only {
+				display: none;
+			}
+		}
+
+		@media (min-width: 500px){
+			body{
+				background-color: red
+			}
+
+			h1::before{
+				content: "Welcome to my page"
+			}
+
+		}
+
+		@media (max-width: 499px ){
+			body{
+				background-color: blue;
+				}
+
+			h1::before{
+				content: "welcome "
+			}
+		}
+
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.container > div{
+			background-color: white;
+			font-weight:bold;
+			padding: 10px;
+			margin:20px;
+			width: 200px;
+
+		}
+		
+	</style>
+	</head>
 <body>
 wassapp boy welcome to branching
 just added the feature branch whaaat
+<p>
+<h1>dude hi</h1>
+	<a href="https://www.google.com">click here to go to google!</a>
+</p>
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="#section11">Section 1</a>
+	<li><a href="#section2"></a></li>
+</ol>
+<h2 id="section1">Section 1</h2>
+<p> 
+okadpaokdpoakdopaopdk</p>
+<h3 id = "section2">Section2</h3>
+<p> why me </p>
+<h4>Okay boys gonna make a form now</h4>
+<form>
+	<div>
+		<input name = "name" type = "text" placeholder = "name">
+		<input name = "password" type = "password" placeholder="Password">
+	</div>
+
+	<div>
+		<input name="color" type="radio" value="red">Red
+		<input name="color" type="radio" value="green">Green
+		<input name="color" type="radio" value="blue">Blue
+	</div>
+
+	<div>
+		<input name="country" list="countries" placeholder="Country">
+		<datalist id="countries">
+			<option value="Afghanistan">
+			<option value="Albania"></option>
+
+		</datalist>
+
+
+	</div>
+</form>
+
+<button>
+	Click Me fam!
+</button>
+
+
+<h4>Advanced CSS</h4>
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+<p class="screen-only">yes last paragrahp wont appear on print outs</p>
+
+
+<h5>Welcome to my webpage</h5>
+
+<p>Lets talk about containers</p>
+
+<div class="container">
+	<div>pkoadkapodapoda</div>
+	<div>pokdaopkpoaksxopakspxokaopx</div>
+	<div>odikosikcoskdocksdocksdpocks</div>
+	<div>oicposdkcoskdcpakpockaps</div>
+	<div>woiedoiwoiwekdoiwedow</div>
+	<div>doiwedowekoxkwokpoewxw</div>
+
+
+</div>
+
+<h6>Alert Messages</h6>
+<div>
+	<div class="alertmessages">
+		<div class = "primary alert" role = "alert">hahha alert</div>
+		<div class = "danger fam" role = "alert">man trouble</div>
+	</div>
+</div>
+
 </body>
 </html>
